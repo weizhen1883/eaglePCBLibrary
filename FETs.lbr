@@ -168,36 +168,36 @@
 </packages>
 <symbols>
 <symbol name="N-MOSFET">
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="1" x2="-0.5" y2="1.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="1.5" x2="-0.5" y2="2" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="1" x2="-0.5" y2="1.5" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="1.5" x2="-0.5" y2="2" width="0.127" layer="94"/>
 <wire x1="-0.5" y1="-1" x2="-0.5" y2="-1.5" width="0.127" layer="94"/>
-<wire x1="-0.5" y1="-1.5" x2="-0.5" y2="-2" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="0" x2="0" y2="0" width="0.15" layer="94"/>
-<wire x1="0" y1="0" x2="0.5" y2="0" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="-1.5" x2="0.5" y2="-1.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="1.5" x2="0.5" y2="1.5" width="0.15" layer="94"/>
-<wire x1="-1" y1="2" x2="-1" y2="-2" width="0.15" layer="94"/>
-<wire x1="-1" y1="-2" x2="-2" y2="-2" width="0.15" layer="94"/>
-<wire x1="0.5" y1="0" x2="0.5" y2="-1.5" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-1.5" x2="-0.5" y2="-2" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="0" x2="0" y2="0" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="0.5" y2="0" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="-1.5" x2="0.5" y2="-1.5" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="1.5" x2="0.5" y2="1.5" width="0.127" layer="94"/>
+<wire x1="-1" y1="2" x2="-1" y2="-2" width="0.127" layer="94"/>
+<wire x1="-1" y1="-2" x2="-2" y2="-2" width="0.127" layer="94"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="-1.5" width="0.127" layer="94"/>
 <wire x1="0.5" y1="-1.5" x2="0.5" y2="-2.5" width="0.127" layer="94"/>
-<wire x1="0.5" y1="1.5" x2="0.5" y2="2.5" width="0.15" layer="94"/>
-<wire x1="0.5" y1="1.5" x2="1.5" y2="1.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="0.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="0.5" x2="1" y2="0.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="0.5" x2="2" y2="0.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="0.5" x2="1" y2="-0.5" width="0.15" layer="94"/>
+<wire x1="0.5" y1="1.5" x2="0.5" y2="2.5" width="0.127" layer="94"/>
+<wire x1="0.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="0.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="0.5" x2="1" y2="0.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="0.5" x2="2" y2="0.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="0.5" x2="1" y2="-0.5" width="0.127" layer="94"/>
 <wire x1="1" y1="-0.5" x2="1.5" y2="-0.5" width="0.127" layer="94"/>
-<wire x1="1.5" y1="-0.5" x2="2" y2="-0.5" width="0.15" layer="94"/>
-<wire x1="2" y1="-0.5" x2="1.5" y2="0.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="-0.5" x2="1.5" y2="-1.5" width="0.15" layer="94"/>
-<wire x1="1.5" y1="-1.5" x2="0.5" y2="-1.5" width="0.15" layer="94"/>
-<circle x="0" y="0" radius="2.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="0" x2="0" y2="0.1" width="0.15" layer="94"/>
+<wire x1="1.5" y1="-0.5" x2="2" y2="-0.5" width="0.127" layer="94"/>
+<wire x1="2" y1="-0.5" x2="1.5" y2="0.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="-0.5" x2="1.5" y2="-1.5" width="0.127" layer="94"/>
+<wire x1="1.5" y1="-1.5" x2="0.5" y2="-1.5" width="0.127" layer="94"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="94"/>
+<wire x1="-0.5" y1="0" x2="0" y2="0.1" width="0.127" layer="94"/>
 <wire x1="0" y1="0.1" x2="0" y2="0" width="0.127" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-0.1" width="0.127" layer="94"/>
-<wire x1="0" y1="-0.1" x2="-0.5" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="-0.1" x2="-0.5" y2="0" width="0.127" layer="94"/>
 <pin name="G" x="-4.5" y="-2" visible="off" length="short" direction="pas"/>
 <pin name="D" x="0.5" y="5" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0.5" y="-5" visible="off" length="short" direction="pas" rot="R90"/>
@@ -218,8 +218,8 @@
 <wire x1="0" y1="0" x2="0.5" y2="0" width="0.127" layer="94"/>
 <wire x1="-0.5" y1="-1.5" x2="0.5" y2="-1.5" width="0.127" layer="94"/>
 <wire x1="-0.5" y1="1.5" x2="0.5" y2="1.5" width="0.127" layer="94"/>
-<wire x1="-1" y1="2" x2="-1" y2="-2" width="0.15" layer="94"/>
-<wire x1="-1" y1="-2" x2="-2" y2="-2" width="0.15" layer="94"/>
+<wire x1="-1" y1="2" x2="-1" y2="-2" width="0.127" layer="94"/>
+<wire x1="-1" y1="-2" x2="-2" y2="-2" width="0.127" layer="94"/>
 <wire x1="0.5" y1="0" x2="0.5" y2="-1.5" width="0.127" layer="94"/>
 <wire x1="0.5" y1="-1.5" x2="0.5" y2="-2.5" width="0.127" layer="94"/>
 <wire x1="0.5" y1="1.5" x2="0.5" y2="2.5" width="0.127" layer="94"/>
