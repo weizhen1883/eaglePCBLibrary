@@ -260,15 +260,15 @@
 </packages>
 <symbols>
 <symbol name="BTN_NORMAL_OFF">
-<wire x1="-0.5" y1="0.4" x2="0" y2="0.4" width="0.127" layer="94"/>
-<wire x1="0" y1="0.4" x2="0.5" y2="0.4" width="0.127" layer="94"/>
-<wire x1="0" y1="0.4" x2="0" y2="0.7" width="0.127" layer="94"/>
-<wire x1="-0.3" y1="0" x2="-1" y2="0" width="0.127" layer="94"/>
-<wire x1="0.3" y1="0" x2="1" y2="0" width="0.127" layer="94"/>
-<pin name="1" x="-3.5" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="3.5" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-1.9" y="-0.8" size="0.6096" layer="95">&gt;NAME</text>
-<text x="-1.9" y="-1.5" size="0.6096" layer="96">&gt;VALUE</text>
+<wire x1="-0.5" y1="0.4" x2="0" y2="0.4" width="0.15" layer="94"/>
+<wire x1="0" y1="0.4" x2="0.5" y2="0.4" width="0.15" layer="94"/>
+<wire x1="0" y1="0.4" x2="0" y2="0.7" width="0.15" layer="94"/>
+<pin name="1" x="-2.5" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.5" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="0" y="-0.5" size="0.6096" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-1.5" size="0.6096" layer="96" align="center">&gt;VALUE</text>
+<wire x1="-0.3" y1="0" x2="-2.5" y2="0" width="0.15" layer="94"/>
+<wire x1="0.3" y1="0" x2="2.5" y2="0" width="0.15" layer="94"/>
 </symbol>
 <symbol name="SW_SPDT">
 <wire x1="-1" y1="0" x2="0.5" y2="0.5" width="0.127" layer="94"/>
