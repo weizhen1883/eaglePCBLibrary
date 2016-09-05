@@ -582,6 +582,8 @@
 <text x="-1.5" y="0" size="0.6096" layer="94" rot="R90" align="center">Micro USB</text>
 <wire x1="-4" y1="-5.5" x2="-4" y2="-7.5" width="0.15" layer="94"/>
 <pin name="SHIELD" x="-4" y="-7.5" visible="off" length="point" direction="pas"/>
+<text x="-3.5" y="6" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
+<text x="-3.5" y="-6.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
