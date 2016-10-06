@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -387,6 +387,24 @@
 <text x="0" y="1.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="4.2" size="0.6096" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="POWERJACK-ADC-028">
+<smd name="3" x="11.1" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="2" x="11.1" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="1" x="5" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
+<smd name="4" x="5" y="5.7" dx="2.8" dy="2.4" layer="1"/>
+<hole x="5" y="0" drill="1.6"/>
+<hole x="9.5" y="0" drill="1.8"/>
+<wire x1="0" y1="4.5" x2="3.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="4.5" x2="9.6" y2="4.5" width="0.127" layer="21"/>
+<wire x1="0" y1="4.5" x2="0" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.5" x2="3.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-4.5" x2="9.6" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="12.6" y1="4.5" x2="15" y2="4.5" width="0.127" layer="21"/>
+<wire x1="15" y1="4.5" x2="15" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="15" y1="-4.5" x2="12.6" y2="-4.5" width="0.127" layer="21"/>
+<text x="0.5" y="0.5" size="0.6096" layer="25" align="center-left">&gt;NAME</text>
+<text x="0.5" y="-0.5" size="0.6096" layer="27" align="center-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-1.X/2.0-STANDARD">
@@ -560,30 +578,50 @@
 <text x="0" y="-8.8" size="0.6096" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB-2.0-MICRO">
-<pin name="D+" x="2.5" y="0" length="short" direction="pas" rot="R180"/>
-<pin name="D-" x="2.5" y="2" length="short" direction="pas" rot="R180"/>
-<pin name="VBUS" x="2.5" y="4" length="short" direction="pas" rot="R180"/>
-<pin name="ID" x="2.5" y="-2" length="short" direction="pas" rot="R180"/>
-<pin name="GND" x="2.5" y="-4" length="short" direction="pas" rot="R180"/>
-<wire x1="0" y1="4" x2="-0.5" y2="4" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="4" x2="-0.5" y2="5.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="5.5" x2="-8.5" y2="5.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="4" x2="-0.5" y2="2" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="2" x2="-0.5" y2="0" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="0" x2="-0.5" y2="-2" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="-2" x2="-0.5" y2="-4" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="-4" x2="-0.5" y2="-5.5" width="0.15" layer="94"/>
-<wire x1="-0.5" y1="-5.5" x2="-4" y2="-5.5" width="0.15" layer="94"/>
-<wire x1="-4" y1="-5.5" x2="-8.5" y2="-5.5" width="0.15" layer="94"/>
-<wire x1="0" y1="-4" x2="-0.5" y2="-4" width="0.15" layer="94"/>
-<wire x1="0" y1="-2" x2="-0.5" y2="-2" width="0.15" layer="94"/>
-<wire x1="0" y1="0" x2="-0.5" y2="0" width="0.15" layer="94"/>
-<wire x1="0" y1="2" x2="-0.5" y2="2" width="0.15" layer="94"/>
-<text x="-1.5" y="0" size="0.6096" layer="94" rot="R90" align="center">Micro USB</text>
-<wire x1="-4" y1="-5.5" x2="-4" y2="-7.5" width="0.15" layer="94"/>
-<pin name="SHIELD" x="-4" y="-7.5" visible="off" length="point" direction="pas"/>
-<text x="-3.5" y="6" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
-<text x="-3.5" y="-6.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="D+" x="1.96" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="D-" x="1.96" y="2" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="VBUS" x="1.96" y="4" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="ID" x="1.96" y="-2" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="GND" x="1.96" y="-4" visible="pad" length="point" direction="pas" rot="R180"/>
+<wire x1="0.5" y1="4" x2="0.5" y2="5.5" width="0.15" layer="94"/>
+<wire x1="0.5" y1="5.5" x2="-2.5" y2="5.5" width="0.15" layer="94"/>
+<wire x1="0.5" y1="4" x2="0.5" y2="2" width="0.15" layer="94"/>
+<wire x1="0.5" y1="2" x2="0.5" y2="0" width="0.15" layer="94"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="-2" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-2" x2="0.5" y2="-4" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-4" x2="0.5" y2="-5.5" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-5.5" x2="-1" y2="-5.5" width="0.15" layer="94"/>
+<wire x1="-1" y1="-5.5" x2="-2.5" y2="-5.5" width="0.15" layer="94"/>
+<text x="-2" y="0" size="0.6096" layer="94" rot="R90" align="center">Micro USB</text>
+<wire x1="-1" y1="-5.5" x2="-1" y2="-7" width="0.15" layer="94"/>
+<pin name="SHIELD" x="-1" y="-7" visible="off" length="point" direction="pas"/>
+<text x="-2.5" y="5.5" size="0.6096" layer="95">&gt;NAME</text>
+<text x="0" y="-6" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
+<text x="0" y="4" size="0.6096" layer="94" align="center-right">VBUS</text>
+<text x="0" y="0" size="0.6096" layer="94" align="center-right">D+</text>
+<text x="0" y="2" size="0.6096" layer="94" align="center-right">D-</text>
+<text x="0" y="-2" size="0.6096" layer="94" align="center-right">ID</text>
+<text x="0" y="-4" size="0.6096" layer="94" align="center-right">GND</text>
+<wire x1="-2.5" y1="5.5" x2="-2.5" y2="-5.5" width="0.15" layer="94"/>
+<wire x1="0.5" y1="4" x2="2" y2="4" width="0.15" layer="94"/>
+<wire x1="0.5" y1="2" x2="2" y2="2" width="0.15" layer="94"/>
+<wire x1="0.5" y1="0" x2="2" y2="0" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-2" x2="2" y2="-2" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-4" x2="2" y2="-4" width="0.15" layer="94"/>
+</symbol>
+<symbol name="POWERJACK">
+<pin name="+" x="3.5" y="0" visible="off" length="point" direction="pas"/>
+<circle x="0" y="0" radius="1.4142125" width="0.15" layer="94"/>
+<wire x1="0" y1="0" x2="3.5" y2="0" width="0.15" layer="94"/>
+<wire x1="-2" y1="2" x2="-2" y2="-2" width="0.15" layer="94"/>
+<wire x1="-2" y1="-2" x2="2" y2="-2" width="0.15" layer="94"/>
+<wire x1="2" y1="-2" x2="2" y2="2" width="0.15" layer="94"/>
+<wire x1="2" y1="2" x2="-2" y2="2" width="0.15" layer="94"/>
+<wire x1="0" y1="-1.5" x2="0" y2="-3.5" width="0.15" layer="94"/>
+<pin name="-" x="0" y="-3.5" visible="off" length="point" direction="pas"/>
+<circle x="0" y="0" radius="0.5" width="0.8128" layer="94"/>
+<text x="2.5" y="-1.5" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
+<text x="2.5" y="-2.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -893,6 +931,22 @@
 <connect gate="G$1" pin="ID" pad="4"/>
 <connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWERJACK" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="POWERJACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD" package="POWERJACK-ADC-028">
+<connects>
+<connect gate="G$1" pin="+" pad="1 2"/>
+<connect gate="G$1" pin="-" pad="3 4"/>
 </connects>
 <technologies>
 <technology name=""/>
