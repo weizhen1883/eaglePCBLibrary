@@ -578,11 +578,11 @@
 <text x="0" y="-8.8" size="0.6096" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB-2.0-MICRO">
-<pin name="D+" x="1.96" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
-<pin name="D-" x="1.96" y="2" visible="pad" length="point" direction="pas" rot="R180"/>
-<pin name="VBUS" x="1.96" y="4" visible="pad" length="point" direction="pas" rot="R180"/>
-<pin name="ID" x="1.96" y="-2" visible="pad" length="point" direction="pas" rot="R180"/>
-<pin name="GND" x="1.96" y="-4" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="D+" x="2" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="D-" x="2" y="2" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="VBUS" x="2" y="4" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="ID" x="2" y="-2" visible="pad" length="point" direction="pas" rot="R180"/>
+<pin name="GND" x="2" y="-4" visible="pad" length="point" direction="pas" rot="R180"/>
 <wire x1="0.5" y1="4" x2="0.5" y2="5.5" width="0.15" layer="94"/>
 <wire x1="0.5" y1="5.5" x2="-2.5" y2="5.5" width="0.15" layer="94"/>
 <wire x1="0.5" y1="4" x2="0.5" y2="2" width="0.15" layer="94"/>
