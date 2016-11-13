@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -427,6 +427,37 @@
 <text x="-17.5" y="1.5" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-17.5" y="-1.5" size="0.6096" layer="27" align="top-left">&gt;VALUE</text>
 </package>
+<package name="8PIN_RIBBONCABLE_2ROW_2.54PITCH_TH">
+<hole x="0" y="0" drill="1.8"/>
+<pad name="1" x="-1.35" y="-1.8" drill="1" shape="octagon"/>
+<pad name="3" x="-3.89" y="-1.8" drill="1" shape="octagon"/>
+<pad name="5" x="-6.43" y="-1.8" drill="1" shape="octagon"/>
+<pad name="7" x="-8.97" y="-1.8" drill="1" shape="octagon"/>
+<pad name="2" x="-2.62" y="0.74" drill="1" shape="octagon"/>
+<pad name="4" x="-5.16" y="0.74" drill="1" shape="octagon"/>
+<pad name="6" x="-7.7" y="0.74" drill="1" shape="octagon"/>
+<pad name="8" x="-10.24" y="0.74" drill="1" shape="octagon"/>
+<wire x1="1.5" y1="-3" x2="1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2" x2="-13" y2="2" width="0.127" layer="21"/>
+<wire x1="-13" y1="2" x2="-13" y2="-3" width="0.127" layer="21"/>
+<wire x1="-13" y1="-3" x2="1.5" y2="-3" width="0.127" layer="21"/>
+<text x="-10.5" y="-2.5" size="0.6096" layer="25" align="center-right">&gt;NAME</text>
+<text x="-10.5" y="-1.5" size="0.6096" layer="27" align="center-right">&gt;VALUE</text>
+</package>
+<package name="2PIN_WM11924CT">
+<smd name="3" x="2.75" y="1.5" dx="2.5" dy="1.4" layer="1"/>
+<smd name="4" x="2.75" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
+<smd name="2" x="-3.25" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
+<smd name="1" x="-3.25" y="1.5" dx="2.5" dy="1.4" layer="1"/>
+<wire x1="3.7" y1="3" x2="-3.7" y2="3" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="3" x2="-3.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-3" x2="3.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-3" x2="3.7" y2="3" width="0.127" layer="21"/>
+<text x="0" y="0.4" size="0.6096" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.4" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+<text x="-3.2" y="2.6" size="0.6096" layer="21" align="center">1</text>
+<text x="-3.2" y="-2.6" size="0.6096" layer="21" align="center">2</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-1.X/2.0-STANDARD">
@@ -450,16 +481,20 @@
 <text x="0.8" y="-6" size="0.6096" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="2PIN">
-<pin name="1" x="-3" y="1" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-3" y="-1" visible="pad" length="short" direction="pas"/>
-<wire x1="-0.5" y1="-2" x2="-0.5" y2="2" width="0.127" layer="94"/>
-<wire x1="-0.5" y1="2" x2="1.5" y2="2" width="0.127" layer="94"/>
-<wire x1="1.5" y1="2" x2="1.5" y2="-2" width="0.127" layer="94"/>
-<wire x1="1.5" y1="-2" x2="-0.5" y2="-2" width="0.127" layer="94"/>
-<text x="0" y="0.5" size="0.8128" layer="94">1</text>
-<text x="0" y="-1.5" size="0.8128" layer="94">2</text>
-<text x="-0.5" y="2.1" size="0.6096" layer="95">&gt;NAME</text>
-<text x="-0.6" y="-2.8" size="0.6096" layer="96">&gt;VALUE</text>
+<pin name="1" x="-3.5" y="1" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-3.5" y="-1" visible="pad" length="short" direction="pas"/>
+<text x="0.5" y="1" size="0.8128" layer="94" align="center">1</text>
+<text x="0.5" y="-1" size="0.8128" layer="94" align="center">2</text>
+<text x="-0.5" y="2.5" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
+<text x="-0.5" y="-2.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
+<wire x1="-1" y1="1" x2="-0.5" y2="1" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="1" x2="-0.5" y2="2" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="2" x2="1.5" y2="2" width="0.15" layer="94"/>
+<wire x1="1.5" y1="2" x2="1.5" y2="-2" width="0.15" layer="94"/>
+<wire x1="1.5" y1="-2" x2="-0.5" y2="-2" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-2" x2="-0.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="-1" y1="-1" x2="-0.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-1" x2="-0.5" y2="1" width="0.15" layer="94"/>
 </symbol>
 <symbol name="3PIN">
 <pin name="2" x="-3" y="0" visible="pad" length="short" direction="pas"/>
@@ -576,28 +611,44 @@
 <text x="0" y="-5" size="0.6096" layer="96">MSP430-Prog</text>
 </symbol>
 <symbol name="8PIN">
-<pin name="4" x="-2.5" y="1" visible="pad" length="short" direction="pas"/>
-<pin name="5" x="-2.5" y="-1" visible="pad" length="short" direction="pas"/>
-<pin name="6" x="-2.5" y="-3" visible="pad" length="short" direction="pas"/>
-<pin name="7" x="-2.5" y="-5" visible="pad" length="short" direction="pas"/>
-<pin name="8" x="-2.5" y="-7" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-2.5" y="3" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-2.5" y="5" visible="pad" length="short" direction="pas"/>
-<pin name="1" x="-2.5" y="7" visible="pad" length="short" direction="pas"/>
-<wire x1="0" y1="-8" x2="0" y2="7.5" width="0.127" layer="94"/>
-<wire x1="0" y1="7.5" x2="2" y2="7.5" width="0.127" layer="94"/>
-<wire x1="2" y1="7.5" x2="2" y2="-8" width="0.127" layer="94"/>
-<wire x1="2" y1="-8" x2="0" y2="-8" width="0.127" layer="94"/>
-<text x="0.5" y="6.5" size="0.8128" layer="94">1</text>
-<text x="0.5" y="5" size="0.8128" layer="94">2</text>
-<text x="0.5" y="3" size="0.8128" layer="94">3</text>
-<text x="0.5" y="1" size="0.8128" layer="94">4</text>
-<text x="0.5" y="-1" size="0.8128" layer="94">5</text>
-<text x="0.5" y="-3" size="0.8128" layer="94">6</text>
-<text x="0.5" y="-5" size="0.8128" layer="94">7</text>
-<text x="0.5" y="-7" size="0.8128" layer="94">8</text>
-<text x="0" y="7.6" size="0.6096" layer="95">&gt;NAME</text>
-<text x="0" y="-8.8" size="0.6096" layer="96">&gt;VALUE</text>
+<pin name="4" x="-3" y="1" visible="off" length="short" direction="pas"/>
+<pin name="5" x="-3" y="-1" visible="off" length="short" direction="pas"/>
+<pin name="6" x="-3" y="-3" visible="off" length="short" direction="pas"/>
+<pin name="7" x="-3" y="-5" visible="off" length="short" direction="pas"/>
+<pin name="8" x="-3" y="-7" visible="off" length="short" direction="pas"/>
+<pin name="3" x="-3" y="3" visible="off" length="short" direction="pas"/>
+<pin name="2" x="-3" y="5" visible="off" length="short" direction="pas"/>
+<pin name="1" x="-3" y="7" visible="off" length="short" direction="pas"/>
+<text x="1" y="7" size="0.8128" layer="94" align="center">1</text>
+<text x="1" y="5" size="0.8128" layer="94" align="center">2</text>
+<text x="1" y="3" size="0.8128" layer="94" align="center">3</text>
+<text x="1" y="1" size="0.8128" layer="94" align="center">4</text>
+<text x="1" y="-1" size="0.8128" layer="94" align="center">5</text>
+<text x="1" y="-3" size="0.8128" layer="94" align="center">6</text>
+<text x="1" y="-5" size="0.8128" layer="94" align="center">7</text>
+<text x="1" y="-7" size="0.8128" layer="94" align="center">8</text>
+<text x="0" y="8.5" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
+<text x="0" y="-8.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
+<wire x1="0" y1="-8" x2="2" y2="-8" width="0.15" layer="94"/>
+<wire x1="2" y1="-8" x2="2" y2="8" width="0.15" layer="94"/>
+<wire x1="2" y1="8" x2="0" y2="8" width="0.15" layer="94"/>
+<wire x1="0" y1="8" x2="0" y2="7" width="0.15" layer="94"/>
+<wire x1="0" y1="7" x2="0" y2="5" width="0.15" layer="94"/>
+<wire x1="0" y1="5" x2="0" y2="3" width="0.15" layer="94"/>
+<wire x1="0" y1="3" x2="0" y2="1" width="0.15" layer="94"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.15" layer="94"/>
+<wire x1="0" y1="-1" x2="0" y2="-3" width="0.15" layer="94"/>
+<wire x1="0" y1="-3" x2="0" y2="-5" width="0.15" layer="94"/>
+<wire x1="0" y1="-5" x2="0" y2="-7" width="0.15" layer="94"/>
+<wire x1="0" y1="-7" x2="0" y2="-8" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-7" x2="0" y2="-7" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-5" x2="0" y2="-5" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-3" x2="0" y2="-3" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-1" x2="0" y2="-1" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="1" x2="0" y2="1" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="3" x2="0" y2="3" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="5" x2="0" y2="5" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="7" x2="0" y2="7" width="0.15" layer="94"/>
 </symbol>
 <symbol name="USB-2.0-MICRO">
 <pin name="D+" x="2" y="0" visible="pad" length="point" direction="pas" rot="R180"/>
@@ -766,6 +817,15 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_WM11924CT" package="2PIN_WM11924CT">
+<connects>
+<connect gate="G$1" pin="1" pad="1 3"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -984,6 +1044,21 @@
 </gates>
 <devices>
 <device name="_HEADER_PITCH2.54MM_TH" package="8PIN_HEADER_PITCH2.54MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_RIBBONCABLE_PITCH2.54MM_TH" package="8PIN_RIBBONCABLE_2ROW_2.54PITCH_TH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
