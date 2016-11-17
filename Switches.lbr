@@ -291,6 +291,21 @@
 <text x="0" y="-6.5" size="0.6096" layer="25" rot="R180" align="center">&gt;NAME</text>
 <text x="0" y="-7.5" size="0.6096" layer="27" rot="R180" align="center">&gt;VALUE</text>
 </package>
+<package name="PVA1">
+<pad name="2'" x="3" y="2.5" drill="0.9" shape="octagon"/>
+<pad name="1'" x="3" y="-2.5" drill="0.9" shape="octagon"/>
+<pad name="1" x="-3" y="-2.5" drill="0.9" shape="octagon"/>
+<pad name="2" x="-3" y="2.5" drill="0.9" shape="octagon"/>
+<wire x1="-4.6" y1="4.9" x2="4.6" y2="4.9" width="0.127" layer="21" style="longdash"/>
+<wire x1="4.6" y1="4.9" x2="4.6" y2="-4.9" width="0.127" layer="21" style="longdash"/>
+<wire x1="4.6" y1="-4.9" x2="-4.6" y2="-4.9" width="0.127" layer="21" style="longdash"/>
+<wire x1="-4.6" y1="-4.9" x2="-4.6" y2="4.9" width="0.127" layer="21" style="longdash"/>
+<circle x="-3.8" y="-4.1" radius="0.412309375" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="-3.8" x2="-3.5" y2="-4.4" width="0.127" layer="21" style="longdash"/>
+<wire x1="-3.5" y1="-3.8" x2="-4.1" y2="-4.4" width="0.127" layer="21" style="longdash"/>
+<text x="0" y="0.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.5" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BTN_NORMAL_OFF">
@@ -518,6 +533,28 @@
 <text x="0.5" y="2.5" size="0.6096" layer="94" align="center-left">4</text>
 <text x="0.5" y="4.5" size="0.6096" layer="94" align="center-left">8</text>
 </symbol>
+<symbol name="PB_PUSH_PUSH_DPST">
+<wire x1="-3" y1="1" x2="-1" y2="1" width="0.15" layer="94"/>
+<wire x1="3" y1="1" x2="1" y2="1" width="0.15" layer="94"/>
+<pin name="1" x="-3" y="1" visible="pad" length="point" direction="pas"/>
+<pin name="2" x="3" y="1" visible="pad" length="point" direction="pas" rot="R180"/>
+<wire x1="3" y1="-1" x2="1" y2="-1" width="0.15" layer="94"/>
+<wire x1="-1" y1="-1" x2="-3" y2="-1" width="0.15" layer="94"/>
+<pin name="1'" x="-3" y="-1" visible="pad" length="point" direction="pas"/>
+<pin name="2'" x="3" y="-1" visible="pad" length="point" direction="pas" rot="R180"/>
+<wire x1="0" y1="-0.5" x2="0" y2="3" width="0.15" layer="94" style="shortdash"/>
+<wire x1="0" y1="3" x2="-1" y2="3.5" width="0.15" layer="94"/>
+<wire x1="-1" y1="3.5" x2="0" y2="4" width="0.15" layer="94"/>
+<wire x1="0" y1="4" x2="0" y2="4.5" width="0.15" layer="94"/>
+<wire x1="0" y1="4.5" x2="-0.5" y2="4.5" width="0.15" layer="94" style="longdash"/>
+<wire x1="0" y1="4.5" x2="1" y2="4.5" width="0.15" layer="94"/>
+<wire x1="0" y1="4.5" x2="-1" y2="4.5" width="0.15" layer="94"/>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.15" layer="94" style="longdash"/>
+<wire x1="-1" y1="-0.5" x2="0" y2="-0.5" width="0.15" layer="94" style="longdash"/>
+<wire x1="0" y1="-0.5" x2="1" y2="-0.5" width="0.15" layer="94" style="longdash"/>
+<text x="0" y="-1.5" size="0.6096" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-2.5" size="0.6096" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BTN_NORMAL_OFF" prefix="BTN" uservalue="yes">
@@ -660,6 +697,24 @@
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PVA1" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PB_PUSH_PUSH_DPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TH" package="PVA1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="1'" pad="1'"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="2'" pad="2'"/>
 </connects>
 <technologies>
 <technology name=""/>
