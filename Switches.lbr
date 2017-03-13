@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -344,6 +344,33 @@
 <text x="0" y="0.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="-0.5" size="0.6096" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="DIP_SW_219-6MST">
+<smd name="8" x="1.27" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="7" x="1.27" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="6" x="-1.27" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="5" x="-1.27" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="10" x="3.81" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="9" x="3.81" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="4" x="-3.81" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="3" x="-3.81" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="12" x="6.35" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="11" x="6.35" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="2" x="-6.35" y="4.305" dx="1.12" dy="2.44" layer="1"/>
+<smd name="1" x="-6.35" y="-4.305" dx="1.12" dy="2.44" layer="1"/>
+<wire x1="-8.355" y1="3.34" x2="8.355" y2="3.34" width="0.15" layer="21"/>
+<wire x1="8.355" y1="3.34" x2="8.355" y2="-3.34" width="0.15" layer="21"/>
+<wire x1="8.355" y1="-3.34" x2="-8.355" y2="-3.34" width="0.15" layer="21"/>
+<wire x1="-8.355" y1="-3.34" x2="-8.355" y2="3.34" width="0.15" layer="21"/>
+<text x="-7.5" y="2.5" size="0.6096" layer="21" align="center">ON</text>
+<text x="-7" y="-2.5" size="0.6096" layer="21" align="center">1</text>
+<text x="-4.5" y="-2.5" size="0.6096" layer="21" align="center">2</text>
+<text x="-2" y="-2.5" size="0.6096" layer="21" align="center">3</text>
+<text x="0.5" y="-2.5" size="0.6096" layer="21" align="center">4</text>
+<text x="3" y="-2.5" size="0.6096" layer="21" align="center">5</text>
+<text x="5.5" y="-2.5" size="0.6096" layer="21" align="center">6</text>
+<text x="0" y="0.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.5" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BTN_NORMAL_OFF">
@@ -601,6 +628,50 @@
 <wire x1="0" y1="0" x2="-1" y2="-1" width="0.15" layer="94"/>
 <wire x1="1" y1="0" x2="0" y2="-1" width="0.15" layer="94"/>
 </symbol>
+<symbol name="DIP_SWITCH_6PIN">
+<pin name="4.0" x="-5" y="-1" visible="off" length="short" direction="pas"/>
+<pin name="4.1" x="5" y="-1" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="-1" x2="-1.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="2.5" y1="-1" x2="1.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="-1" x2="1.5" y2="0" width="0.15" layer="94"/>
+<pin name="3.0" x="-5" y="1" visible="off" length="short" direction="pas"/>
+<pin name="3.1" x="5" y="1" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="1" x2="-1.5" y2="1" width="0.15" layer="94"/>
+<wire x1="2.5" y1="1" x2="1.5" y2="1" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="1" x2="1.5" y2="2" width="0.15" layer="94"/>
+<pin name="2.0" x="-5" y="3" visible="off" length="short" direction="pas"/>
+<pin name="2.1" x="5" y="3" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="3" x2="-1.5" y2="3" width="0.15" layer="94"/>
+<wire x1="2.5" y1="3" x2="1.5" y2="3" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="3" x2="1.5" y2="4" width="0.15" layer="94"/>
+<pin name="1.0" x="-5" y="5" visible="off" length="short" direction="pas"/>
+<pin name="1.1" x="5" y="5" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="5" x2="-1.5" y2="5" width="0.15" layer="94"/>
+<wire x1="2.5" y1="5" x2="1.5" y2="5" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="5" x2="1.5" y2="6" width="0.15" layer="94"/>
+<pin name="6.0" x="-5" y="-5" visible="off" length="short" direction="pas"/>
+<pin name="6.1" x="5" y="-5" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="-5" x2="-1.5" y2="-5" width="0.15" layer="94"/>
+<wire x1="2.5" y1="-5" x2="1.5" y2="-5" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="-5" x2="1.5" y2="-4" width="0.15" layer="94"/>
+<pin name="5.0" x="-5" y="-3" visible="off" length="short" direction="pas"/>
+<pin name="5.1" x="5" y="-3" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.5" y1="-3" x2="-1.5" y2="-3" width="0.15" layer="94"/>
+<wire x1="2.5" y1="-3" x2="1.5" y2="-3" width="0.15" layer="94"/>
+<wire x1="-1.5" y1="-3" x2="1.5" y2="-2" width="0.15" layer="94"/>
+<text x="-3.5" y="5.5" size="0.6096" layer="94">1</text>
+<text x="-3.5" y="3.5" size="0.6096" layer="94">2</text>
+<text x="-3.5" y="1.5" size="0.6096" layer="94">3</text>
+<text x="-3.5" y="-0.5" size="0.6096" layer="94">4</text>
+<text x="-3.5" y="-2.5" size="0.6096" layer="94">5</text>
+<text x="-3.5" y="-4.5" size="0.6096" layer="94">6</text>
+<wire x1="-4" y1="6.5" x2="-4" y2="-6.5" width="0.15" layer="94"/>
+<wire x1="-4" y1="-6.5" x2="4" y2="-6.5" width="0.15" layer="94"/>
+<wire x1="4" y1="-6.5" x2="4" y2="6.5" width="0.15" layer="94"/>
+<wire x1="4" y1="6.5" x2="-4" y2="6.5" width="0.15" layer="94"/>
+<text x="-4" y="6.5" size="0.6096" layer="95">&gt;NAME</text>
+<text x="-4" y="-6.5" size="0.6096" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BTN_NORMAL_OFF" prefix="BTN" uservalue="yes">
@@ -781,6 +852,32 @@
 <connect gate="G$1" pin="1'" pad="1'"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="2'" pad="2'"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP_SWITCH_6PIN" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DIP_SWITCH_6PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-219-6MST" package="DIP_SW_219-6MST">
+<connects>
+<connect gate="G$1" pin="1.0" pad="1"/>
+<connect gate="G$1" pin="1.1" pad="2"/>
+<connect gate="G$1" pin="2.0" pad="3"/>
+<connect gate="G$1" pin="2.1" pad="4"/>
+<connect gate="G$1" pin="3.0" pad="5"/>
+<connect gate="G$1" pin="3.1" pad="6"/>
+<connect gate="G$1" pin="4.0" pad="7"/>
+<connect gate="G$1" pin="4.1" pad="8"/>
+<connect gate="G$1" pin="5.0" pad="9"/>
+<connect gate="G$1" pin="5.1" pad="10"/>
+<connect gate="G$1" pin="6.0" pad="11"/>
+<connect gate="G$1" pin="6.1" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
