@@ -617,7 +617,7 @@
 <text x="0" y="0" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="-1" size="0.6096" layer="27" align="center">&gt;VALUE</text>
 </package>
-<package name="S3B-PH">
+<package name="S3B-PH-K-S">
 <pad name="2" x="0" y="0" drill="0.7"/>
 <pad name="3" x="-2" y="0" drill="0.7"/>
 <pad name="1" x="2" y="0" drill="0.7" shape="square"/>
@@ -627,6 +627,18 @@
 <wire x1="3.95" y1="6.25" x2="-3.95" y2="6.25" width="0.15" layer="21"/>
 <text x="0" y="5.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="4.5" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="S4B-PH-K-S">
+<pad name="3" x="-1" y="0" drill="0.7"/>
+<pad name="4" x="-3" y="0" drill="0.7"/>
+<pad name="1" x="3" y="0" drill="0.7" shape="square"/>
+<wire x1="4.95" y1="6.25" x2="4.95" y2="-1.35" width="0.15" layer="21"/>
+<wire x1="4.95" y1="-1.35" x2="-4.95" y2="-1.35" width="0.15" layer="21"/>
+<wire x1="-4.95" y1="-1.35" x2="-4.95" y2="6.25" width="0.15" layer="21"/>
+<wire x1="4.95" y1="6.25" x2="-4.95" y2="6.25" width="0.15" layer="21"/>
+<text x="0" y="5.5" size="0.6096" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="4.5" size="0.6096" layer="27" align="center">&gt;VALUE</text>
+<pad name="2" x="1" y="0" drill="0.7"/>
 </package>
 </packages>
 <symbols>
@@ -1287,7 +1299,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="_S3B-PH" package="S3B-PH">
+<device name="_S3B-PH-K-S" package="S3B-PH-K-S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1338,6 +1350,17 @@
 </technologies>
 </device>
 <device name="_HEADER_PITCH1.27MM_TH" package="4PIN_HEADER_PITCH1.27MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_S4B-PH-K-S" package="S4B-PH-K-S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
