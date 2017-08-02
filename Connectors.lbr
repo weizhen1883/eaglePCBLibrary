@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -695,6 +695,42 @@
 <wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
 <text x="-3.5" y="3" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-3.5" y="-3.5" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
+<package name="S4B-PH-SM4-TB">
+<smd name="3" x="-1" y="-2.75" dx="1" dy="3.5" layer="1"/>
+<smd name="4" x="-3" y="-2.75" dx="1" dy="3.5" layer="1"/>
+<smd name="2" x="1" y="-2.75" dx="1" dy="3.5" layer="1"/>
+<smd name="1" x="3" y="-2.75" dx="1" dy="3.5" layer="1"/>
+<smd name="S2" x="-5.35" y="3" dx="1.5" dy="3.4" layer="1"/>
+<smd name="S1" x="5.35" y="3" dx="1.5" dy="3.4" layer="1"/>
+<wire x1="4" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6" y1="-2" x2="4" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4" y1="-2" x2="-6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2" x2="-6" y2="1" width="0.127" layer="21"/>
+<wire x1="6" y1="-2" x2="6" y2="1" width="0.127" layer="21"/>
+</package>
+<package name="TC2030_NL">
+<smd name="1" x="-1.27" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="-1.27" y="0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="0" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="0" y="0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="1.27" y="0.635" dx="0.787" dy="0.787" layer="1" roundness="100" cream="no"/>
+<hole x="-2.54" y="0" drill="0.991"/>
+<hole x="2.54" y="1.016" drill="0.991"/>
+<hole x="2.54" y="-1.016" drill="0.991"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.27" y="0.635"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+</polygon>
+<wire x1="-4.953" y1="3.048" x2="4.953" y2="3.048" width="0.127" layer="21"/>
+<wire x1="4.953" y1="3.048" x2="4.953" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="4.953" y1="-3.048" x2="-4.953" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="-3.048" x2="-4.953" y2="3.048" width="0.127" layer="21"/>
+<text x="-4.5" y="2.5" size="0.6096" layer="25" align="center-left">&gt;NAME</text>
+<text x="-4.5" y="-2.5" size="0.6096" layer="27" align="center-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1491,6 +1527,17 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_S4B-PH-SM4-TB" package="S4B-PH-SM4-TB">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="5PIN" prefix="J" uservalue="yes">
@@ -1837,6 +1884,19 @@
 </gates>
 <devices>
 <device name="_PITCH2.54MM_TH" package="6PIN_HEADER_2ROW_PITCH2.54MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_TC2030_NL" package="TC2030_NL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
