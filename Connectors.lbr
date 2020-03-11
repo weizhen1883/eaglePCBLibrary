@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -972,6 +972,297 @@
 <text x="0" y="1" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="2" size="0.6096" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="RJ45-SMD-C">
+<smd name="4" x="-0.51" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="5" x="0.51" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="3" x="-1.53" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="6" x="1.53" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="2" x="-2.55" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="7" x="2.55" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="1" x="-3.57" y="0" dx="0.5" dy="3" layer="1"/>
+<smd name="8" x="3.57" y="0" dx="0.5" dy="3" layer="1"/>
+<hole x="-6" y="0" drill="1.8"/>
+<hole x="6" y="0" drill="1.8"/>
+<smd name="S1" x="-8.5" y="-6.8" dx="2.62" dy="4.3" layer="1"/>
+<smd name="S2" x="8.5" y="-6.8" dx="2.62" dy="4.3" layer="1"/>
+<wire x1="-6.8" y1="-9.3" x2="-10.2" y2="-9.3" width="0.127" layer="21"/>
+<wire x1="-10.2" y1="-9.3" x2="-10.2" y2="2" width="0.127" layer="21"/>
+<wire x1="-10.2" y1="2" x2="10.2" y2="2" width="0.127" layer="21"/>
+<wire x1="10.2" y1="2" x2="10.2" y2="-9.3" width="0.127" layer="21"/>
+<wire x1="10.2" y1="-9.3" x2="6.8" y2="-9.3" width="0.127" layer="21"/>
+<wire x1="6.8" y1="-9.3" x2="6.8" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="6.8" y1="-2.8" x2="5.8" y2="-1.8" width="0.127" layer="21" curve="90"/>
+<wire x1="5.8" y1="-1.8" x2="-5.8" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="-1.8" x2="-6.8" y2="-2.8" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.8" y1="-2.8" x2="-6.8" y2="-9.3" width="0.127" layer="21"/>
+<dimension x1="-6.8" y1="-2.8" x2="6.8" y2="-2.8" x3="0" y3="-3" textsize="0.6096" layer="47" width="0.1"/>
+<dimension x1="-5.8" y1="-2.8" x2="-6.63205" y2="-2.2453" x3="-11.624353125" y3="1.0829" textsize="0.6096" layer="47" dtype="radius" width="0.1"/>
+<text x="-10" y="2.5" size="0.6096" layer="25" font="vector" align="center-left">&gt;NAME</text>
+<text x="10" y="2.5" size="0.6096" layer="27" font="vector" align="center-right">&gt;VALUE</text>
+<polygon width="0.127" layer="46">
+<vertex x="-9" y="-6.8" curve="90"/>
+<vertex x="-8.5" y="-7.3" curve="90"/>
+<vertex x="-8" y="-6.8" curve="90"/>
+<vertex x="-8.5" y="-6.3" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="8" y="-6.8" curve="90"/>
+<vertex x="8.5" y="-7.3" curve="90"/>
+<vertex x="9" y="-6.8" curve="90"/>
+<vertex x="8.5" y="-6.3" curve="90"/>
+</polygon>
+<wire x1="-10.5" y1="-12.45" x2="10.5" y2="-12.45" width="0.127" layer="21" style="shortdash"/>
+<dimension x1="-10.5" y1="-12.45" x2="-10.5" y2="2" x3="-11" y3="-5.225" textsize="0.6096" layer="47"/>
+</package>
+<package name="USB-A-PLUG-1001-011-01101">
+<smd name="3" x="-1" y="2.75" dx="1.1" dy="2.5" layer="1"/>
+<smd name="2" x="1" y="2.75" dx="1.1" dy="2.5" layer="1"/>
+<smd name="4" x="-3.5" y="2.75" dx="1.1" dy="2.5" layer="1"/>
+<smd name="1" x="3.5" y="2.75" dx="1.1" dy="2.5" layer="1"/>
+<hole x="-2.3" y="0" drill="1.1"/>
+<hole x="2.3" y="0" drill="1.1"/>
+<pad name="S2" x="-5.7" y="0" drill="0.9" shape="long" rot="R90"/>
+<pad name="S1" x="5.7" y="0" drill="0.9" shape="long" rot="R90"/>
+<polygon width="0.127" layer="46">
+<vertex x="-5.7" y="1.25" curve="90"/>
+<vertex x="-6.15" y="0.8"/>
+<vertex x="-6.15" y="-0.8" curve="90"/>
+<vertex x="-5.7" y="-1.25" curve="90"/>
+<vertex x="-5.25" y="-0.8"/>
+<vertex x="-5.25" y="0.8" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="5.25" y="0.8"/>
+<vertex x="5.25" y="-0.8" curve="90"/>
+<vertex x="5.7" y="-1.25" curve="90"/>
+<vertex x="6.15" y="-0.8"/>
+<vertex x="6.15" y="0.8" curve="90"/>
+<vertex x="5.7" y="1.25" curve="90"/>
+</polygon>
+<wire x1="-6" y1="-2" x2="-6" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="-6" y1="-3.1" x2="-6" y2="-17.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="-17.8" x2="6" y2="-17.8" width="0.127" layer="21"/>
+<wire x1="6" y1="-17.8" x2="6" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="6" y1="-3.1" x2="6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-6" y1="-3.1" x2="6" y2="-3.1" width="0.127" layer="21"/>
+<dimension x1="-6" y1="-3.1" x2="-6" y2="0" x3="0" y3="-1.55" textsize="0.6096" layer="47" width="0.1"/>
+<wire x1="-6" y1="2" x2="-6" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="4.5" x2="6" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6" y1="4.5" x2="6" y2="2" width="0.127" layer="21"/>
+<text x="-6" y="5" size="0.6096" layer="25" font="vector" align="center-left">&gt;NAME</text>
+<text x="6" y="5" size="0.6096" layer="27" font="vector" align="center-right">&gt;VALUE</text>
+</package>
+<package name="PJR-404">
+<smd name="2" x="-4.5" y="-1.8" dx="2.9" dy="1.4" layer="1"/>
+<smd name="1" x="4.5" y="-1.8" dx="2.9" dy="1.4" layer="1"/>
+<smd name="4" x="-4.5" y="-5" dx="2.9" dy="1.4" layer="1"/>
+<smd name="3" x="4.5" y="-5" dx="2.9" dy="1.4" layer="1"/>
+<smd name="6" x="-4.5" y="-8.3" dx="2.9" dy="1.4" layer="1"/>
+<smd name="5" x="4.5" y="-8.3" dx="2.9" dy="1.4" layer="1"/>
+<smd name="8" x="-4.5" y="-11.8" dx="2.9" dy="1.4" layer="1"/>
+<smd name="7" x="4.5" y="-11.8" dx="2.9" dy="1.4" layer="1"/>
+<wire x1="-3.5" y1="0" x2="-3.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="-4" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-6" x2="-3.5" y2="-7" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-9.5" x2="-3.5" y2="-10.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-13" x2="-3.5" y2="-14.7" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-14.7" x2="3.5" y2="-14.7" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-14.7" x2="3.5" y2="-13" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-10.5" x2="3.5" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-7" x2="3.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-4" x2="3.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-0.5" x2="3.5" y2="0" width="0.127" layer="21"/>
+<wire x1="3.5" y1="0" x2="2.5" y2="0" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0" x2="-2.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0" x2="-3.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="0" width="0.127" layer="21"/>
+<hole x="0" y="-2.5" drill="1.5"/>
+<hole x="0" y="-11.7" drill="1.5"/>
+<text x="-3.5" y="-15.5" size="0.6096" layer="25" font="vector" align="center-left">&gt;NAME</text>
+<text x="3.5" y="-15.5" size="0.6096" layer="27" font="vector" align="center-left">&gt;VALUE</text>
+</package>
+<package name="3.5MM_4PIN_PJR_TH">
+<pad name="1" x="1.8" y="2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="2" x="1.8" y="-2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="3" x="5" y="2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="4" x="5" y="-2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="5" x="8.3" y="2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="6" x="8.3" y="-2.5" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="7" x="11.8" y="2" drill="0.8" diameter="1.1" shape="long"/>
+<pad name="8" x="11.8" y="-2" drill="0.8" diameter="1.1" shape="long"/>
+<polygon width="0.127" layer="46">
+<vertex x="1.4" y="2.1"/>
+<vertex x="2.2" y="2.1" curve="90"/>
+<vertex x="2.6" y="2.5" curve="90"/>
+<vertex x="2.2" y="2.9"/>
+<vertex x="1.4" y="2.9" curve="90"/>
+<vertex x="1" y="2.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="5.8" y="2.5" curve="90"/>
+<vertex x="5.4" y="2.9"/>
+<vertex x="4.6" y="2.9" curve="90"/>
+<vertex x="4.2" y="2.5" curve="90"/>
+<vertex x="4.6" y="2.1"/>
+<vertex x="5.4" y="2.1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="9.1" y="2.5" curve="90"/>
+<vertex x="8.7" y="2.9"/>
+<vertex x="7.9" y="2.9" curve="90"/>
+<vertex x="7.5" y="2.5" curve="90"/>
+<vertex x="7.9" y="2.1"/>
+<vertex x="8.7" y="2.1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="12.6" y="2" curve="90"/>
+<vertex x="12.2" y="2.4"/>
+<vertex x="11.4" y="2.4" curve="90"/>
+<vertex x="11" y="2" curve="90"/>
+<vertex x="11.4" y="1.6"/>
+<vertex x="12.2" y="1.6" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="1.4" y="-2.9"/>
+<vertex x="2.2" y="-2.9" curve="90"/>
+<vertex x="2.6" y="-2.5" curve="90"/>
+<vertex x="2.2" y="-2.1"/>
+<vertex x="1.4" y="-2.1" curve="90"/>
+<vertex x="1" y="-2.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="5.8" y="-2.5" curve="90"/>
+<vertex x="5.4" y="-2.1"/>
+<vertex x="4.6" y="-2.1" curve="90"/>
+<vertex x="4.2" y="-2.5" curve="90"/>
+<vertex x="4.6" y="-2.9"/>
+<vertex x="5.4" y="-2.9" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="9.1" y="-2.5" curve="90"/>
+<vertex x="8.7" y="-2.1"/>
+<vertex x="7.9" y="-2.1" curve="90"/>
+<vertex x="7.5" y="-2.5" curve="90"/>
+<vertex x="7.9" y="-2.9"/>
+<vertex x="8.7" y="-2.9" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="46">
+<vertex x="12.6" y="-2" curve="90"/>
+<vertex x="12.2" y="-1.6"/>
+<vertex x="11.4" y="-1.6" curve="90"/>
+<vertex x="11" y="-2" curve="90"/>
+<vertex x="11.4" y="-2.4"/>
+<vertex x="12.2" y="-2.4" curve="90"/>
+</polygon>
+<wire x1="0" y1="3.3" x2="0" y2="2.6" width="0.127" layer="21"/>
+<wire x1="0" y1="2.6" x2="0" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.6" x2="0" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.3" x2="14.7" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="14.7" y1="-3.3" x2="14.7" y2="3.3" width="0.127" layer="21"/>
+<wire x1="14.7" y1="3.3" x2="0" y2="3.3" width="0.127" layer="21"/>
+<wire x1="0" y1="2.6" x2="-2.5" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.6" x2="-2.5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.6" x2="0" y2="-2.6" width="0.127" layer="21"/>
+<hole x="2.5" y="0" drill="1.4"/>
+<hole x="11.7" y="0" drill="1.4"/>
+<text x="0" y="4" size="0.6096" layer="25" align="center-left">&gt;NAME</text>
+<text x="0" y="-4" size="0.6096" layer="27" align="center-left">&gt;VALUE</text>
+</package>
+<package name="2PIN_VH3.96AW">
+<pad name="2" x="-1.98" y="0" drill="1.8" shape="octagon"/>
+<pad name="1" x="1.98" y="0" drill="1.8" shape="octagon"/>
+<wire x1="-4" y1="-11.7" x2="-4" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4" x2="-4" y2="2" width="0.127" layer="21"/>
+<wire x1="-4" y1="2" x2="4" y2="2" width="0.127" layer="21"/>
+<wire x1="4" y1="2" x2="4" y2="-4" width="0.127" layer="21"/>
+<wire x1="4" y1="-4" x2="4" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="4" y1="-11.7" x2="-4" y2="-11.7" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4" x2="4" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-16.8" x2="4" y2="-16.8" width="0.127" layer="21" style="shortdash"/>
+<text x="0" y="2.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
+<package name="2PIN-XH2.54-TOP">
+<smd name="S1" x="4.47" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="S2" x="-4.47" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="1" x="1.27" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<smd name="2" x="-1.27" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<wire x1="-5" y1="4" x2="-5" y2="6" width="0.127" layer="21"/>
+<wire x1="-5" y1="6" x2="-2.5" y2="6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="6" x2="5" y2="6" width="0.127" layer="21"/>
+<wire x1="5" y1="6" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="-5" y1="-0.5" x2="-5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.5" x2="5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-1.5" x2="5" y2="-0.5" width="0.127" layer="21"/>
+<text x="4" y="6.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-4" y="6.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
+<package name="2PIN-XH2.54-SIDE">
+<smd name="S1" x="4.47" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="S2" x="-4.47" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="1" x="1.27" y="8.55" dx="1.3" dy="4.5" layer="1"/>
+<smd name="2" x="-1.27" y="8.55" dx="1.3" dy="4.5" layer="1"/>
+<wire x1="-5" y1="4" x2="-5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="6.5" x2="-2.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="6.5" x2="5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="5" y1="6.5" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="-5" y1="-0.5" x2="-5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.5" x2="5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-1.5" x2="5" y2="-0.5" width="0.127" layer="21"/>
+<text x="4" y="7" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-4" y="7" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
+<package name="3PIN-XH2.54-TOP">
+<smd name="S1" x="5.74" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="S2" x="-5.74" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="1" x="2.54" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<smd name="2" x="0" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<wire x1="-6.5" y1="4" x2="-6.5" y2="6" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="6" x2="-3.5" y2="6" width="0.127" layer="21"/>
+<wire x1="3.5" y1="6" x2="6.5" y2="6" width="0.127" layer="21"/>
+<wire x1="6.5" y1="6" x2="6.5" y2="4" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-0.5" x2="-6.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-1.5" x2="6.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-1.5" x2="6.5" y2="-0.5" width="0.127" layer="21"/>
+<text x="5" y="6.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-5" y="6.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<smd name="3" x="-2.54" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+</package>
+<package name="4PIN-XH2.54-TOP">
+<smd name="S1" x="7.01" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="S2" x="-7.01" y="1.75" dx="1.8" dy="3.9" layer="1"/>
+<smd name="1" x="3.81" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<smd name="2" x="1.27" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<wire x1="-7.5" y1="4" x2="-7.5" y2="6" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="6" x2="-5" y2="6" width="0.127" layer="21"/>
+<wire x1="5" y1="6" x2="7.5" y2="6" width="0.127" layer="21"/>
+<wire x1="7.5" y1="6" x2="7.5" y2="4" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-0.5" x2="-7.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-1.5" x2="7.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-1.5" x2="7.5" y2="-0.5" width="0.127" layer="21"/>
+<text x="6.5" y="6.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-6.5" y="6.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<smd name="3" x="-1.27" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+<smd name="4" x="-3.81" y="7.25" dx="1.3" dy="4.5" layer="1"/>
+</package>
+<package name="3PIN-ZH1.50-TOP">
+<smd name="2" x="0" y="3.9" dx="0.7" dy="5" layer="1"/>
+<smd name="3" x="-1.5" y="3.9" dx="0.7" dy="5" layer="1"/>
+<smd name="1" x="1.5" y="3.9" dx="0.7" dy="5" layer="1"/>
+<smd name="S1" x="3.55" y="1.15" dx="1.5" dy="2.3" layer="1"/>
+<smd name="S2" x="-3.55" y="1.15" dx="1.5" dy="2.3" layer="1"/>
+<wire x1="-4" y1="-0.5" x2="-4" y2="-1" width="0.127" layer="21"/>
+<wire x1="-4" y1="-1" x2="4" y2="-1" width="0.127" layer="21"/>
+<wire x1="4" y1="-1" x2="4" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="2.5" x2="-4" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-2.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="4" y1="2.5" x2="4" y2="3.5" width="0.127" layer="21"/>
+<wire x1="4" y1="3.5" x2="2.5" y2="3.5" width="0.127" layer="21"/>
+<text x="4" y="4" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-4" y="4" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-1.X/2.0-STANDARD">
@@ -1622,6 +1913,107 @@
 <text x="0" y="5" size="0.6096" layer="95" align="center-right">&gt;NAME</text>
 <text x="0" y="-5" size="0.6096" layer="96" align="center-right">&gt;VALUE</text>
 </symbol>
+<symbol name="RJ45">
+<pin name="4" x="-3.5" y="1" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-3.5" y="3" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-3.5" y="5" visible="pad" length="short" direction="pas"/>
+<pin name="1" x="-3.5" y="7" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="-3.5" y="-1" visible="pad" length="short" direction="pas"/>
+<pin name="6" x="-3.5" y="-3" visible="pad" length="short" direction="pas"/>
+<pin name="7" x="-3.5" y="-5" visible="pad" length="short" direction="pas"/>
+<pin name="8" x="-3.5" y="-7" visible="pad" length="short" direction="pas"/>
+<wire x1="-1.5" y1="-8" x2="2" y2="-8" width="0.1524" layer="94"/>
+<wire x1="2" y1="-8" x2="2" y2="-3" width="0.1524" layer="94"/>
+<wire x1="2" y1="-3" x2="3" y2="-3" width="0.1524" layer="94"/>
+<wire x1="3" y1="-3" x2="3" y2="-1.5" width="0.1524" layer="94"/>
+<wire x1="3" y1="-1.5" x2="4" y2="-1.5" width="0.1524" layer="94"/>
+<wire x1="4" y1="-1.5" x2="4" y2="1.5" width="0.1524" layer="94"/>
+<wire x1="4" y1="1.5" x2="3" y2="1.5" width="0.1524" layer="94"/>
+<wire x1="3" y1="1.5" x2="3" y2="3" width="0.1524" layer="94"/>
+<wire x1="3" y1="3" x2="2" y2="3" width="0.1524" layer="94"/>
+<wire x1="2" y1="3" x2="2" y2="8" width="0.1524" layer="94"/>
+<wire x1="2" y1="8" x2="-1.5" y2="8" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="8" x2="-1.5" y2="7.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="6.5" x2="-1.5" y2="5.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="4.5" x2="-1.5" y2="3.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="1.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="-0.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-2.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-3.5" x2="-1.5" y2="-4.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-5.5" x2="-1.5" y2="-6.5" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-7.5" x2="-1.5" y2="-8" width="0.1524" layer="94"/>
+<text x="-1.5" y="8.5" size="0.6096" layer="95" font="vector" align="center-left">&gt;NAME</text>
+<text x="-1.5" y="-8.5" size="0.6096" layer="96" font="vector" align="center-left">&gt;VALUE</text>
+</symbol>
+<symbol name="LED">
+<wire x1="-0.5" y1="0" x2="0" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="0" x2="0.5" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="0" x2="-0.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="-0.5" y1="-1" x2="0" y2="-1" width="0.15" layer="94"/>
+<wire x1="0" y1="-1" x2="0.5" y2="-1" width="0.15" layer="94"/>
+<wire x1="0.5" y1="-1" x2="0" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="-1" x2="0" y2="-3" width="0.15" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2" width="0.15" layer="94"/>
+<wire x1="0.2" y1="0.3" x2="0.8" y2="0.9" width="0.15" layer="94"/>
+<wire x1="0.8" y1="0.9" x2="0.6" y2="0.9" width="0.15" layer="94"/>
+<wire x1="0.6" y1="0.9" x2="0.8" y2="0.7" width="0.15" layer="94"/>
+<wire x1="0.8" y1="0.7" x2="0.8" y2="0.9" width="0.15" layer="94"/>
+<wire x1="0.2" y1="1" x2="0.8" y2="1.6" width="0.15" layer="94"/>
+<wire x1="0.8" y1="1.6" x2="0.6" y2="1.6" width="0.15" layer="94"/>
+<wire x1="0.6" y1="1.6" x2="0.8" y2="1.4" width="0.15" layer="94"/>
+<wire x1="0.8" y1="1.4" x2="0.8" y2="1.6" width="0.15" layer="94"/>
+<pin name="K" x="0" y="2" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="A" x="0" y="-3" visible="off" length="point" direction="pas" rot="R90"/>
+<text x="1" y="0.5" size="0.6096" layer="95" align="center-left">&gt;NAME</text>
+<text x="1" y="-0.5" size="0.6096" layer="96" align="center-left">&gt;VALUE</text>
+</symbol>
+<symbol name="SHIELD">
+<pin name="P$1" x="0" y="2.5" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="0" y1="0" x2="0" y2="-0.5" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.5" x2="-0.5" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.5" x2="-1" y2="-0.5" width="0.1524" layer="94"/>
+<wire x1="-1" y1="-0.5" x2="-1.5" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.5" x2="1" y2="-0.5" width="0.1524" layer="94"/>
+<wire x1="1" y1="-0.5" x2="0.5" y2="-2" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="4PIN-3.5MM">
+<pin name="3" x="-4.5" y="1" visible="off" length="short" direction="pas"/>
+<pin name="2" x="-4.5" y="-1" visible="off" length="short" direction="pas"/>
+<pin name="4" x="-4.5" y="3" visible="off" length="short" direction="pas"/>
+<pin name="1" x="-4.5" y="-3" visible="off" length="short" direction="pas"/>
+<wire x1="-2" y1="3" x2="-1.5" y2="3" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="3" x2="-0.5" y2="4" width="0.1524" layer="94"/>
+<wire x1="-0.5" y1="4" x2="0.5" y2="3" width="0.1524" layer="94"/>
+<wire x1="-2" y1="1" x2="-1.5" y2="1" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="1" x2="-0.5" y2="2" width="0.1524" layer="94"/>
+<wire x1="-0.5" y1="2" x2="0.5" y2="1" width="0.1524" layer="94"/>
+<wire x1="-2" y1="-1" x2="-1.5" y2="-1" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-1" x2="-0.5" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="-1" width="0.1524" layer="94"/>
+<wire x1="-2" y1="-3" x2="-1.5" y2="-3" width="0.1524" layer="94"/>
+<wire x1="-1.5" y1="-3" x2="-0.5" y2="-2" width="0.1524" layer="94"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-3" width="0.1524" layer="94"/>
+<wire x1="2.5" y1="4.5" x2="1.5" y2="4" width="0.1524" layer="94"/>
+<wire x1="1.5" y1="4" x2="2" y2="2.5" width="0.1524" layer="94"/>
+<wire x1="2" y1="2.5" x2="2" y2="2" width="0.1524" layer="94"/>
+<wire x1="2" y1="2" x2="2" y2="0" width="0.1524" layer="94"/>
+<wire x1="2" y1="0" x2="2" y2="-2" width="0.1524" layer="94"/>
+<wire x1="2" y1="-2" x2="2" y2="-4.5" width="0.1524" layer="94"/>
+<wire x1="2" y1="-4.5" x2="3" y2="-4.5" width="0.1524" layer="94"/>
+<wire x1="3" y1="-4.5" x2="3" y2="-2" width="0.1524" layer="94"/>
+<wire x1="3" y1="-2" x2="3" y2="0" width="0.1524" layer="94"/>
+<wire x1="3" y1="0" x2="3" y2="2" width="0.1524" layer="94"/>
+<wire x1="3" y1="2" x2="3" y2="2.5" width="0.1524" layer="94"/>
+<wire x1="3" y1="2.5" x2="3.5" y2="4" width="0.1524" layer="94"/>
+<wire x1="3.5" y1="4" x2="2.5" y2="4.5" width="0.1524" layer="94"/>
+<wire x1="2" y1="2" x2="3" y2="2" width="0.1524" layer="94"/>
+<wire x1="2" y1="0" x2="3" y2="0" width="0.1524" layer="94"/>
+<wire x1="2" y1="-2" x2="3" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0.5" y1="-3" x2="1.5" y2="-3" width="0.1524" layer="94"/>
+<wire x1="0.5" y1="-1" x2="1.5" y2="-1" width="0.1524" layer="94"/>
+<wire x1="0.5" y1="1" x2="1.5" y2="1" width="0.1524" layer="94"/>
+<wire x1="0.5" y1="3" x2="1.5" y2="3" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USB-1.X/2.0-STANDARD" prefix="USB" uservalue="yes">
@@ -1706,6 +2098,33 @@
 </technologies>
 </device>
 <device name="_078171-0002" package="078171-0002">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_VH3.96AW" package="2PIN_VH3.96AW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_XH2.54_TOP" package="2PIN-XH2.54-TOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_XH2.54_SIDE" package="2PIN-XH2.54-SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1841,6 +2260,26 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_XH2.54_TOP" package="3PIN-XH2.54-TOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ZH1.50_TOP" package="3PIN-ZH1.50-TOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="4PIN" prefix="J" uservalue="yes">
@@ -1926,6 +2365,17 @@
 </technologies>
 </device>
 <device name="_S4B-PH-SM4-TB" package="S4B-PH-SM4-TB">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_XH2.54_TOP" package="4PIN-XH2.54-TOP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2438,6 +2888,78 @@
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="USB-1.X/2.0-STANDARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A-PLUG-SMD" package="USB-A-PLUG-1001-011-01101">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="GND_CASE" pad="S1 S2"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RJ45-1" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RJ45" x="0" y="0"/>
+<gate name="G$2" symbol="SHIELD" x="8.5" y="-6.5"/>
+</gates>
+<devices>
+<device name="" package="RJ45-SMD-C">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$2" pin="P$1" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.5MM_4PIN_CONN" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="4PIN-3.5MM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PJR-404">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+<connect gate="G$1" pin="3" pad="5 6"/>
+<connect gate="G$1" pin="4" pad="7 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_TH" package="3.5MM_4PIN_PJR_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+<connect gate="G$1" pin="3" pad="5 6"/>
+<connect gate="G$1" pin="4" pad="7 8"/>
 </connects>
 <technologies>
 <technology name=""/>
