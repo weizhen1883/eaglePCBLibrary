@@ -1263,6 +1263,67 @@
 <text x="4" y="4" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="-4" y="4" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
 </package>
+<package name="2PIN-XH2.54-TOP-TH">
+<text x="3" y="3.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-2.5" y="3.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="1" x="1.27" y="-0.54" drill="0.9" shape="square"/>
+<pad name="2" x="-1.27" y="-0.54" drill="0.9" shape="octagon"/>
+<wire x1="-3.75" y1="2.85" x2="3.75" y2="2.85" width="0.127" layer="21"/>
+<wire x1="3.75" y1="2.85" x2="3.75" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-2.85" x2="-3.75" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-2.85" x2="-3.75" y2="2.85" width="0.127" layer="21"/>
+</package>
+<package name="3PIN-XH2.54-TOP-TH">
+<text x="3" y="3.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-2.5" y="3.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="1" x="2.54" y="-0.54" drill="0.9" shape="square"/>
+<pad name="2" x="0" y="-0.54" drill="0.9" shape="octagon"/>
+<wire x1="-5" y1="2.85" x2="5" y2="2.85" width="0.127" layer="21"/>
+<wire x1="5" y1="2.85" x2="5" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.85" x2="-5" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.85" x2="-5" y2="2.85" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="-0.54" drill="0.9" shape="octagon"/>
+</package>
+<package name="4PIN-XH2.54-TOP-TH">
+<text x="5" y="3.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-4.5" y="3.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="1" x="3.81" y="-0.54" drill="0.9" shape="square"/>
+<pad name="2" x="1.27" y="-0.54" drill="0.9" shape="octagon"/>
+<wire x1="-6.25" y1="2.85" x2="6.25" y2="2.85" width="0.127" layer="21"/>
+<wire x1="6.25" y1="2.85" x2="6.25" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-2.85" x2="-6.25" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-2.85" x2="-6.25" y2="2.85" width="0.127" layer="21"/>
+<pad name="3" x="-1.27" y="-0.54" drill="0.9" shape="octagon"/>
+<pad name="4" x="-3.81" y="-0.54" drill="0.9" shape="octagon"/>
+</package>
+<package name="2PIN-XH2.54-SIDE-TH">
+<text x="2.5" y="3.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-2" y="3.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="1" x="1.27" y="0" drill="0.9" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="0.9" shape="octagon"/>
+<wire x1="3.75" y1="0" x2="3.75" y2="-6.9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-6.9" x2="-3.75" y2="-6.9" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-6.9" x2="-3.75" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="0" x2="-2.5" y2="0" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0" x2="3.75" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-6.9" x2="-3.75" y2="-8.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.75" y1="-8.5" x2="3.75" y2="-8.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.75" y1="-8.5" x2="3.75" y2="-6.9" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.75" y1="0" x2="-3.75" y2="3" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-3.75" y1="3" x2="3.75" y2="3" width="0.127" layer="21" style="shortdash"/>
+<wire x1="3.75" y1="3" x2="3.75" y2="0" width="0.127" layer="21" style="shortdash"/>
+</package>
+<package name="3PIN-ZH1.50-TOP-TH">
+<text x="2" y="2.5" size="0.6096" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-2" y="2.5" size="0.6096" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="3" x="-1.5" y="-0.5" drill="0.7" shape="octagon"/>
+<pad name="2" x="0" y="-0.5" drill="0.7" shape="octagon"/>
+<pad name="1" x="1.5" y="-0.5" drill="0.7" shape="square"/>
+<wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-1.X/2.0-STANDARD">
@@ -2133,6 +2194,24 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_XH2.54_TOP_TH" package="2PIN-XH2.54-TOP-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_XH2.54_SIDE_TH" package="2PIN-XH2.54-SIDE-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3PIN" prefix="J" uservalue="yes">
@@ -2280,6 +2359,26 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_XH2.54_TOP_TH" package="3PIN-XH2.54-TOP-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_ZH1.50_TOP_TH" package="3PIN-ZH1.50-TOP-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="4PIN" prefix="J" uservalue="yes">
@@ -2376,6 +2475,17 @@
 </technologies>
 </device>
 <device name="_XH2.54_TOP" package="4PIN-XH2.54-TOP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_XH2.54_TOP_TH" package="4PIN-XH2.54-TOP-TH">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
